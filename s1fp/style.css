@@ -1,7 +1,67 @@
 body {
-    background-color: teal;
+    font-size: 50px;
+    font-family: fantasy;
+    background-size: cover;
+  }
+
+  #homepage {
+    background-image: url("ValorantBG.jpeg");
+  }
+ #Neonpage {
+  background-image: url("Sunset_Map.webp");
+ }
+ #Jettpage {
+  background-image: url("Valorant_FractureOverview.jpg");
+ }
+ .wrapper {
+    position: relative;
+    width: 1100px;
+    height: 900px;
+    margin-top: 100px;
+    margin-left: 370px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
+    overflow: hidden;
+  }
+
+
+.floatl {
+    width: 200px;
+    height: 200px;
+    float: left;
+    position: relative;
+    top: 40px;
+    left: 280px;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', serif;
+  }
+
+#floatclear {
+    clear: both;
+  }
+  #oneyear {
+    width: 200px;
+  }
+#Jett {
+  width: 170px;
+} 
+
+#Raze {
+  width: 170px
+}
+#Neon {
+  width: 170px;
 }
 
-#dog {
-    width: 200px;
+#Razeclip {
+  margin-top: 200px;
+  margin-left: 150px;
+}
+#Jettclip {
+  margin-top: 200px;
+  margin-left: 150px;
+}
+#Neonclip {
+  margin-top: 200px;
+  margin-left: 150px;
 }
