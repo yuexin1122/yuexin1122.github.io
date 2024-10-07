@@ -137,3 +137,15 @@ opacity: 1.0;
   top: 180px;
   left: 50px;
 }
+
+#Continent {
+  position: absolute;
+  width: 100px;
+  bottom: 0px;
+  left: 100px;
+}
+#Yoshitomo {
+  position: absolute;
+  width: 70px;
+  bottom: 0px;
+}
