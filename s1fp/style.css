@@ -142,10 +142,11 @@ opacity: 1.0;
   position: absolute;
   width: 100px;
   bottom: 0px;
-  left: 100px;
+  left: 0px;
 }
 #Yoshitomo {
   position: absolute;
   width: 70px;
   bottom: 0px;
+  right: 0px;
 }
