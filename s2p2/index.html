@@ -1,0 +1,91 @@
+<head></head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="homepage">
+    <div class="wrapper">
+        <img src="Kirby/BackButton.png" alt="A pink button with an arrow pointing left" id="BackButton">
+        <img src="Kirby/Kirbyrunning.png" alt="A Kirby is Running Fast" id="Kirbyrunning">
+        <img src="Kirby/FeedKirby.png" alt="Text of Feed Kirby!" id="FeedKirby">
+        <img src="Kirby/KirbyEating.png" alt="A Kibry with its mouth wide open" id="KirbyEating">
+        <img src="Kirby/KirbyFull.png" alt="A Kibry is eating full and it becomes bigger" id="KirbyFull">       
+        <img src="Kirby/KirbySuperFull .png" alt="A Kirby is eating fuper fuull and it becomes bigger and bigger, it can't eat more" id="KirbySuperFull">
+        <img src="Kirby/CarKirby.png" alt="A Kirby is covering on top of a blue car and makes it pink from top to wheels" id="CarKirby">
+        <img src="Kirby/VendingMachineKirby Background Removed.png" alt="A Kirby is in the shape of a vending machine" id="VendingMachineKirby">
+        <img src="Kirby/KirbyCone.png" alt="A Kirby is convering over a traffic cone from top to the bottom" id="KirbyCone">
+        <div class="floatwrapper">
+            <div class="floatl" id="Applewrapper">
+              <img src="Kirby/RedApple.png" alt="A cartoon red apple" id="RedApple">
+            </div>
+            <div class="floatl" id="Carwrapper">
+                <img src="Kirby/BlueCar.png" alt="A cartoon blue car" id="BlueCar">
+            </div>
+            <div class="floatl" id="VendingMachinewrapper">
+                <img src="Kirby/VendingMachine.png" alt="A red cartoon Vending Machine" id="VendingMachine">
+            </div>
+            <div class="floatl" id="Conewrapper">
+                <img src="Kirby/Cone.png" alt="A cartoon orange and white cone" id="Cone">
+            </div>
+        </div>
+        <script>
+             document.getElementById('BackButton').addEventListener('click', function() {
+                location.reload();
+            });
+            document.getElementById('Applewrapper').addEventListener('mouseover', function() {
+                document.getElementById('KirbyEating').style.visibility = 'hidden';
+                document.getElementById('KirbyFull').style.visibility = 'visible';
+            });
+            document.getElementById('RedApple').addEventListener('click', function() {
+                document.getElementById('KirbyEating').style.visibility = 'hidden';
+                document.getElementById('KirbyFull').style.visibility = 'hidden';
+                document.getElementById('KirbySuperFull').style.visibility = 'visible';
+            });
+            document.getElementById('Applewrapper').addEventListener('mouseout', function() {
+                document.getElementById('KirbyEating').style.visibility = 'visible';
+                document.getElementById('KirbyFull').style.visibility = 'hidden';
+            });
+            document.getElementById('Carwrapper').addEventListener('mouseover', function() {
+                document.getElementById('KirbyEating').style.visibility = 'hidden';
+                document.getElementById('KirbyFull').style.visibility = 'visible';
+            });
+            document.getElementById('BlueCar').addEventListener('click', function() {
+                document.getElementById('KirbyEating').style.visibility = 'hidden';
+                document.getElementById('KirbyFull').style.visibility = 'hidden';
+                document.getElementById('CarKirby').style.visibility = 'visible';
+            });
+            document.getElementById('Carwrapper').addEventListener('mouseout', function() {
+                document.getElementById('KirbyEating').style.visibility = 'visible';
+                document.getElementById('KirbyFull').style.visibility = 'hidden';
+            });
+            document.getElementById('VendingMachinewrapper').addEventListener('mouseover', function() {
+                document.getElementById('KirbyEating').style.visibility = 'hidden';
+                document.getElementById('KirbyFull').style.visibility = 'visible';
+            });
+
+            document.getElementById('VendingMachinewrapper').addEventListener('mouseout', function() {
+                document.getElementById('KirbyEating').style.visibility = 'visible';
+                document.getElementById('KirbyFull').style.visibility = 'hidden';
+            });
+            document.getElementById('VendingMachine').addEventListener('click', function() {
+                document.getElementById('KirbyEating').style.visibility = 'hidden';
+                document.getElementById('KirbyFull').style.visibility = 'hidden';
+                document.getElementById('VendingMachineKirby').style.visibility = 'visible';
+            });
+            document.getElementById('Conewrapper').addEventListener('mouseover', function() {
+                document.getElementById('KirbyEating').style.visibility = 'hidden';
+                document.getElementById('KirbyFull').style.visibility = 'visible';
+            });
+        
+            document.getElementById('Conewrapper').addEventListener('mouseout', function() {
+                document.getElementById('KirbyEating').style.visibility = 'visible';
+                document.getElementById('KirbyFull').style.visibility = 'hidden';
+            });
+            document.getElementById('Cone').addEventListener('click', function() {
+                document.getElementById('KirbyEating').style.visibility = 'hidden';
+                document.getElementById('KirbyFull').style.visibility = 'hidden';
+                document.getElementById('KirbyCone').style.visibility = 'visible';
+            });
+        </script>
+        
+        <div class="floatclear"></div>
+    </div>
+</body>

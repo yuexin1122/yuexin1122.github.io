@@ -1,0 +1,134 @@
+body {
+    font-size: 10vw;
+    font-family:monospace;
+    background-size: cover;
+  }
+  #homepage {
+    background-image: url(Kirby/KirbyBackground.jpg)
+  }
+  .wrapper {
+    position: relative;
+    width: 99vw;
+    min-height: 99vh; 
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(6px);
+    overflow: hidden;
+  }
+
+#BackButton {
+  width: 7vw;
+  position: absolute;
+  top: 1vh;
+  left: 2vw;
+}
+
+#BackButton:active {
+  transform: scale(0.9);
+}
+
+  #Kirbyrunning {
+    width: 30vw;
+    margin-left: 35vw;
+    margin-top: 10vh;
+  }
+  #FeedKirby {
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: 2vh;
+  }
+
+
+  #KirbyEating {
+    width: 40vw;
+    margin-left: 30vw;
+    margin-top: 10vh;
+    visibility: visible; 
+    transition: visibility 0s, opacity 0.5s linear; 
+    opacity: 1;
+}
+
+#KirbyFull {
+  width: 22vw;
+  margin-left: -37vw;
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s linear; 
+}
+
+#KirbySuperFull {
+  width: 33vw;
+  margin-left: -30vw;
+  visibility: hidden;
+}
+
+#CarKirby {
+  width: 50vw;
+  margin-top: -32vw;
+  margin-left: 24vw;
+  visibility: hidden;
+}
+
+#VendingMachineKirby {
+  width: 28vw;
+  margin-top: -34vw;
+  margin-left: 38vw;
+  visibility: hidden;
+}
+#KirbyCone {
+  width: 40vw;
+  margin-top: -40vw;
+  margin-left: 27vw;
+  visibility: hidden;
+}
+
+  .floatl {
+    width: 20vw;
+    height: 20vh;
+    float: left;
+    position: relative;
+    margin-top: 10vh;
+    left: 5vw;
+  }
+  
+
+  #RedApple {
+    width: 15vmin;
+  }
+
+  #RedApple:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+  }
+
+  #BlueCar {
+    width: 23vmin;
+  }
+
+  #BlueCar:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+  }
+
+  #VendingMachine {
+    width: 15vmin;
+    margin-left: 7vw;
+  }
+  #VendingMachine:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+  }
+
+
+  #Conewrapper {
+    width: 30vw;
+  }
+  #Cone {
+    width: 13vmin;
+    margin-left: 10vw;
+  }
+#Cone:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+  .floatclear {
+    clear: both;
+  }
