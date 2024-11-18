@@ -1,0 +1,61 @@
+<head>
+    <title>Java Counter</title>
+    <script>
+        function startCounting() {
+            let count = 0;
+            const maxCount = 40;
+            const counterElement = document.getElementById("counter");
+            const exploreText1 = document.getElementById("ExploreText1");
+
+            const interval = setInterval(function() {
+                if (count <= maxCount) {
+                    counterElement.innerText = count;
+                    if (count === 20) {
+                        exploreText1.style.display = 'block';
+                    }
+                    count++;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 1000);
+        }
+        function handleExploreTextClick() {
+            const count = parseInt(document.getElementById("counter").innerText);
+            if (count < 20) {
+                window.location.href = "Dead0.html";
+            } else {
+                window.location.href = "Ganon.html";
+            }
+        }
+        window.onload = startCounting;
+    </script>
+    <style>
+        #counter {
+            position: fixed;
+            top: 10px;
+            left: 15vw;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 5vw;
+            color:rgb(204, 161, 105);
+        }
+    </style>
+</head>
+</head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="homepage">
+    <div id="counter">0</div>
+    <div class="explore-container">
+        <img src="Zelda Icon/Explore/Explore1.jpg" class="explore-image" id="Explore1">
+        <img src="Zelda Icon/Explore/Explore2.jpg" class="explore-image" id="Explore2">
+        <img src="Zelda Icon/Explore/Explore3.jpg" class="explore-image" id="Explore3">
+        <img src="Zelda Icon/Explore/Explore4.jpg" class="explore-image" id="Explore4">
+        <img src="Zelda Icon/Explore/Explore5.jpg" class="explore-image" id="Explore5">
+        <img src="Zelda Icon/Explore/Explore6.jpg" class="explore-image" id="Explore6">
+        <img src="Zelda Icon/Explore/Explore7.jpg" class="explore-image" id="Explore7">
+        <img src="Zelda Icon/Explore/Explore8.jpg" class="explore-image" id="Explore8">
+    </div>
+    <img src="Zelda Icon/Explore/Level.png" id="Level">
+    <img src="Zelda Icon/Starting Point/HillText4.png" id="ExploreText0" onclick="handleExploreTextClick()">
+    <img src="Zelda Icon/Explore/ExploreText0.png" id="ExploreText1">
+</body>

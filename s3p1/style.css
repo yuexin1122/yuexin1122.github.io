@@ -1,0 +1,505 @@
+body {
+    font-size: 10vw;
+    font-family:monospace;
+    background-size: cover;
+  }
+  #homepage {
+    background-color: black;
+  }
+
+  #ZeldaHomeIcon {
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: 15vh;
+  }
+
+  #PlayIcon {
+    width: 20vw;
+    margin-left: 42vw;
+  }
+  #PlayIcon:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+  }
+
+  #WakingUpText {
+    width: 50vw;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+#WakeUp {
+  width: 10vw;
+  position: fixed;
+  bottom: 100px;
+  left: 46%;
+  z-index: 10;
+}
+#WakeUp:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+  #Eye1 {
+    width: 100vw;
+    margin-top: 10vw;
+    position: absolute;
+    top: 0;
+  }
+  #Eye2 {
+    width: 100vw;
+    margin-top: 10vw;
+    position: absolute;
+    top: 0;
+  }
+  #Eye3 {
+    width: 100vw;
+    margin-top: 10vw;
+    position: absolute;
+    top: 0;
+  }
+
+  .slideshow-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+@keyframes slideshow {
+    0% { opacity: 1; }
+    33% { opacity: 0; }
+    34% { opacity: 0; }
+    66% { opacity: 1; }
+    67% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#Eye1 {
+    animation: slideshow 3s infinite;
+}
+
+#Eye2 {
+    animation: slideshow 3s infinite;
+    animation-delay: 1s;
+}
+
+#Eye3 {
+    animation: slideshow 3s infinite;
+    animation-delay: 2s;
+}
+
+#MeetingZelda {
+  width: 40vw;
+  margin-left: 30vw;
+}
+
+#HeroText0 {
+  width: 10vw;
+  position: absolute;
+  top: 30vw;
+  left: 45vw;
+}
+
+#HeroText1 {
+  width: 40vw;
+  position: absolute;
+  top: 32vw;
+  left: 30vw;
+}
+
+#HeroText2 {
+  width: 54vw;
+  position: absolute;
+  top: 34vw;
+  left: 23vw;
+}
+
+#HeroText3 {
+  width: 34vw;
+  position: absolute;
+  top: 40vw;
+  left: 34vw;
+}
+
+#HeroText4 {
+  width: 20vw;
+  position: absolute;
+  top: 45vw;
+  left: 22vw;
+}
+#HeroText4:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+#HeroText5 {
+  width: 21vw;
+  position: absolute;
+  top: 45vw;
+  left: 57vw;
+}
+
+#HeroText5:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+#StartingPointBG {
+  width: 40vw;
+  margin-left: 30vw;
+}
+
+#HillText0 {
+  width: 34vw;
+  position: absolute;
+  top: 30vw;
+  left: 34vw;
+}
+
+#HillText1 {
+  width: 44vw;
+  position: absolute;
+  top: 32vw;
+  left: 29vw;
+}
+
+#HillText2 {
+  width: 34vw;
+  position: absolute;
+  top: 34vw;
+  left: 34vw;
+}
+
+#HillText3 {
+  width: 34vw;
+  position: absolute;
+  top: 40vw;
+  left: 34vw;
+}
+
+#HillText4 {
+  width: 25vw;
+  position: absolute;
+  top: 44vw;
+  left: 20vw;
+}
+
+#HillText4:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+#HillText5 {
+  width: 27vw;
+  position: absolute;
+  top: 44vw;
+  left: 58vw;
+}
+
+#HillText5:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+#LinkDead {
+  width: 40vw;
+  margin-left: 30vw;
+}
+
+#Dead0Text0 {
+  width: 10vw;
+  position: absolute;
+  top: 40vw;
+  left: 45vw;
+}
+
+#Dead0Text1 {
+  width: 70vw;
+  position: absolute;
+  top: 45vw;
+  left: 15vw;
+}
+
+#Dead0Text2 {
+  width: 25vw;
+  position: absolute;
+  top: 50vw;
+  left: 17vw;
+}
+
+#Dead0Text3 {
+  width: 16vw;
+  position: absolute;
+  top: 50vw;
+  left: 63vw;
+}
+
+#Dead0Text2:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+#Dead0Text3:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+#Explore1 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Explore2 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Explore3 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Explore4 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Explore5 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Explore6 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Explore7 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Explore8 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+.explore-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.explore-image {
+  position: absolute;
+  top: 0;
+  left: 30vw;
+  width: 40vw;
+  height: auto;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+@keyframes explore-animation {
+  0% { opacity: 1; }
+  12.5% { opacity: 1; }
+  25% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+#Explore1 {
+  animation: explore-animation 24s infinite;
+}
+
+#Explore2 {
+  animation: explore-animation 24s infinite;
+  animation-delay: 3s;
+}
+
+#Explore3 {
+  animation: explore-animation 24s infinite;
+  animation-delay: 6s;
+}
+
+#Explore4 {
+  animation: explore-animation 24s infinite;
+  animation-delay: 9s;
+}
+
+#Explore5 {
+  animation: explore-animation 24s infinite;
+  animation-delay: 12s;
+}
+
+#Explore6 {
+  animation: explore-animation 24s infinite;
+  animation-delay: 15s;
+}
+
+#Explore7 {
+  animation: explore-animation 24s infinite;
+  animation-delay: 18s;
+}
+
+#Explore8 {
+  animation: explore-animation 24s infinite;
+  animation-delay: 21s;
+}
+
+#Level {
+  width: 10vw;
+  position: fixed;
+  top: 2vw;
+  z-index: 10;
+}
+
+#ExploreText0 {
+  width: 25vw;
+  position: absolute;
+  top: 65vw;
+  left: 38vw;
+}
+
+#ExploreText0:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+#ExploreText1 {
+  display: none;
+  width: 50vw;
+  position: absolute;
+  top: 60vw;
+  left: 25vw;
+}
+
+#Ganon1 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#GanonText1 {
+  width: 20vw;
+  position: absolute;
+  left: 40vw;
+  top: 55vw;
+}
+
+#GanonText2 {
+  width: 30vw;
+  position: absolute;
+  left: 35vw;
+  top: 60vw;
+}
+
+#GanonText3 {
+  width: 15vw;
+  position: absolute;
+  left: 25vw;
+  top: 64vw;
+}
+
+#GanonText4 {
+  width: 21vw;
+  position: absolute;
+  left: 55vw;
+  top: 64vw;
+}
+
+#GanonText3:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+#GanonText4:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+#MeetingZelda1 {
+  position: absolute;
+  width: 40vw;
+  margin-left: 30vw;
+}
+
+#StartingPointBG1 {
+  position: absolute;
+  width: 40vw;
+  margin-left: 30vw;
+}
+
+#Journey1 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Journey2 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Journey3 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Journey4 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Journey5 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Journey6 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Journey7 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Journey8 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
+
+#Journey9 {
+  width: 40vw;
+  position: absolute;
+  left: 30vw;
+}
