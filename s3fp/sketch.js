@@ -1,3 +1,4 @@
+//source: http://www.haptic-data.com/toxiclibsjs/examples/soft-body-square
 const { VerletPhysics2D, VerletParticle2D, VerletSpring2D } = toxi.physics2d;
 const { GravityBehavior } = toxi.physics2d.behaviors;
 const { Vec2D, Rect } = toxi.geom;
@@ -14,22 +15,6 @@ let w = 900;
 let h = 600;
 
 let bgColor = 255;
-let num = 0;
-
-function KeyPressed() {
-  if (key== ' ') {
-
-    showSprings = !showSprings;
-
-    num+=1;
-
-    if (num%2 ==0 ){
-      bgColor = 255;
-    }else{
-      bgColor = 0;
-    }
-  }
-}
 
 
 
@@ -40,7 +25,7 @@ function setup() {
 
   let bounds = new Rect (0, 0, width, height);
   physics. setWorldBounds (bounds);
-
+//Adding Particles
   particles.push (new Particle(w/2-100, 100));
   particles.push (new Particle(w/2-50, 100));
   particles.push (new Particle(w/2, 100));
@@ -56,20 +41,21 @@ function setup() {
   particles.push (new Particle(w/2-100, 250));
 
   particles.push (new Particle(w/2-50, 175));
-
+//Adding Eyes
   eyes.push (new Eyes (w/2-25, 150));
   eyes.push (new Eyes (w/2+25, 150));
 
-  //feet
+//Adding feet
   eyes.push (new Eyes (w/2-25, 275));
   eyes.push (new Eyes (w/2+25, 275));
 
+//Adding Springs
   for (let particle of particles) {
     springs.push (new Spring (particle, eyes[0], 0.01));
     springs.push (new Spring (particle, eyes[1], 0.01));
   }
 
-  //feet
+//Adding legs
   springs.push (new Spring (eyes[2], particles[9], 0.01));
   springs.push (new Spring (eyes[3], particles[7], 0.01));
 }
@@ -100,11 +86,6 @@ function draw() {
   point(eyes[2].x, eyes [2].y);
   point(eyes[3].x, eyes [3].y);
 
-  if (showSprings) {
-    for (let spring of springs) {
-      spring.show ();
-    }
-  }
 
   if (mouseIsPressed) {
     eyes[3].lock();

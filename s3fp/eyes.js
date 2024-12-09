@@ -10,7 +10,9 @@ show () {
     fill (255);
     strokeWeight (1);
     translate (this.x, this.y);
+    //blinking
     scale (1, (frameCount)%80<10?0.1:1);
+    
     circle(0, 0, this.r * 12);
     strokeWeight(this.r * 4);
     circle(0, 0, this.r * 2);
