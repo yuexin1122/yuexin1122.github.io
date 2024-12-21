@@ -1,0 +1,63 @@
+<head>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+<!-- JavaScript -->
+<div id = homepage class = section>
+    <img src="Pics/Yuexin’s Art of the Web.png" id = bgletters>
+    <img src="Pics/Line 1.png" id = bottomline>
+    <a href="workmuseum.html">
+    <img src="Pics/Desktop.png" id = "Desktop">
+    </a>
+    <img src="Pics/clips.png" id="clips">
+    <img src="Pics/Class.png" id = "class">
+    <img src="Pics/Girl.png" id = "girl">
+    <a href="readingresponse.html">
+    <img src="Pics/bookshelf.png" id = "bookshelf">
+    </a>
+    <img src="Pics/Resume.png" id = "resume">
+    <img src="Pics/Yoshi.png" id = "yoshi">
+    <img src="Pics/Reviewmywork.png" id="reviewwork">
+    <img src="Pics/aboutclass.png" id="abtclass">
+    <img src="Pics/readingresponse.png" id = readingresponse>
+    
+</div>
+<script>
+const Desktop = document.getElementById("Desktop");
+const classImage = document.getElementById("class");
+const reviewWorkImage = document.getElementById("reviewwork");
+const abtclass = document.getElementById("abtclass");
+const bookshelf = document.getElementById("bookshelf");
+const readingresponse = document.getElementById("readingresponse");
+
+reviewWorkImage.style.visibility = "hidden";
+abtclass.style.visibility = "hidden";
+readingresponse.style.visibility = "hidden";
+
+Desktop.addEventListener("mouseover", () => {
+  reviewWorkImage.style.visibility = "visible"; 
+});
+
+Desktop.addEventListener("mouseout", () => {
+  reviewWorkImage.style.visibility = "hidden";
+});
+
+classImage.addEventListener("mouseover", () => {
+  abtclass.style.visibility = "visible"; 
+});
+
+classImage.addEventListener("mouseout", () => {
+  abtclass.style.visibility = "hidden";
+});
+
+bookshelf.addEventListener("mouseover", () => {
+  readingresponse.style.visibility = "visible"; 
+});
+
+bookshelf.addEventListener("mouseout", () => {
+  readingresponse.style.visibility = "hidden";
+});
+
+</script>
+</body>
